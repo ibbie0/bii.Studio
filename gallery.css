@@ -1,0 +1,42 @@
+.art-card {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  background: #111;
+  border: 1px solid rgba(255,255,255,0.08);
+  cursor: pointer;
+
+  transition:
+    transform .25s ease,
+    box-shadow .25s ease,
+    border-color .25s ease;
+}
+
+.art-card:hover {
+  transform: translateY(-4px) scale(1.02);
+  border-color: rgba(120,160,255,0.4);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+}
+
+.art-info {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 10px 12px;
+
+  background: linear-gradient(
+    to top,
+    rgba(0,0,0,0.65),
+    rgba(0,0,0,0)
+  );
+
+  backdrop-filter: blur(4px);
+}
+
+.art-title {
+  font-size: 13px;
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: .3px;
+}
